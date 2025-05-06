@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4bc2009cb3c1c8f85b71df77fc1f74d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4bc2009cb3c1c8f85b71df77fc1f74d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4bc2009cb3c1c8f85b71df77fc1f74d6 = L.map(
+                "map_4bc2009cb3c1c8f85b71df77fc1f74d6",
+                {
+                    center: [23.8, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4cafeb1c946d844b8db41f7f2f089756 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4bc2009cb3c1c8f85b71df77fc1f74d6);
+        
+    
+            var marker_9dc23d40b2ce2a0b381b14cfec16d5e6 = L.marker(
+                [24.9735, 121.4507],
+                {}
+            ).addTo(map_4bc2009cb3c1c8f85b71df77fc1f74d6);
+        
+    
+            var icon_25c8021638368c6ab160a333e6ac50d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9dc23d40b2ce2a0b381b14cfec16d5e6.setIcon(icon_25c8021638368c6ab160a333e6ac50d8);
+        
+    
+        var popup_6ca2e74973f62ae91155f4a2b99e70a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d733a8fbfc91111b2b5e40882f72cb4 = $(`<div id="html_2d733a8fbfc91111b2b5e40882f72cb4" style="width: 100.0%; height: 100.0%;">公司總部：新北市土城區自由街2號</div>`)[0];
+            popup_6ca2e74973f62ae91155f4a2b99e70a0.setContent(html_2d733a8fbfc91111b2b5e40882f72cb4);
+        
+
+        marker_9dc23d40b2ce2a0b381b14cfec16d5e6.bindPopup(popup_6ca2e74973f62ae91155f4a2b99e70a0)
+        ;
+
+        
+    
+    
+            var feature_group_ab3549686f3893fd049594363d5042f5 = L.featureGroup(
+                {}
+            ).addTo(map_4bc2009cb3c1c8f85b71df77fc1f74d6);
+        
+    
+            var circle_marker_ccb28af6d62aa805918a6cba46e4449e = L.circleMarker(
+                [25.0173, 121.5398],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_7a2b594d69c1299da0f73e2902c5fd43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b52943086b6af98a82476a8e4c9f96b = $(`<div id="html_8b52943086b6af98a82476a8e4c9f96b" style="width: 100.0%; height: 100.0%;">台灣大學 (2023年): 69 份</div>`)[0];
+            popup_7a2b594d69c1299da0f73e2902c5fd43.setContent(html_8b52943086b6af98a82476a8e4c9f96b);
+        
+
+        circle_marker_ccb28af6d62aa805918a6cba46e4449e.bindPopup(popup_7a2b594d69c1299da0f73e2902c5fd43)
+        ;
+
+        
+    
+    
+            var poly_line_98d43486dbe7b547a393e18dc2155ba0 = L.polyline(
+                [[25.0173, 121.5398], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.76}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_f14f1f6eef32a776911c327949fc87f3 = L.circleMarker(
+                [24.7867, 120.9996],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_b6b7d9d9f0c44e67bc9a4d83e731a9cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7a9834723207dcad07b63a534e8f0ce = $(`<div id="html_c7a9834723207dcad07b63a534e8f0ce" style="width: 100.0%; height: 100.0%;">陽明交通大學 (2023年): 35 份</div>`)[0];
+            popup_b6b7d9d9f0c44e67bc9a4d83e731a9cb.setContent(html_c7a9834723207dcad07b63a534e8f0ce);
+        
+
+        circle_marker_f14f1f6eef32a776911c327949fc87f3.bindPopup(popup_b6b7d9d9f0c44e67bc9a4d83e731a9cb)
+        ;
+
+        
+    
+    
+            var poly_line_36775eb59b70bf28b8a5a7e8282b4bc1 = L.polyline(
+                [[24.7867, 120.9996], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.4}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_23956cceff1aff801be7d3192cbb5722 = L.circleMarker(
+                [22.9986, 120.2199],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_c8ed118b5e4a1d387d24b177947e9ce8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8f5bec8c577b8e3fc9acb8474b7a564 = $(`<div id="html_b8f5bec8c577b8e3fc9acb8474b7a564" style="width: 100.0%; height: 100.0%;">成功大學 (2023年): 39 份</div>`)[0];
+            popup_c8ed118b5e4a1d387d24b177947e9ce8.setContent(html_b8f5bec8c577b8e3fc9acb8474b7a564);
+        
+
+        circle_marker_23956cceff1aff801be7d3192cbb5722.bindPopup(popup_c8ed118b5e4a1d387d24b177947e9ce8)
+        ;
+
+        
+    
+    
+            var poly_line_d398f8ffe21143fb72d037e98d6b4360 = L.polyline(
+                [[22.9986, 120.2199], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.56}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_21463c74ad3e8e2df804bc4fb7f82150 = L.circleMarker(
+                [24.9681, 121.1919],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_85b11310cb38ab9ab84dcd7113e79cd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53f2cbba0ef4a2389ed708c893b0fa4c = $(`<div id="html_53f2cbba0ef4a2389ed708c893b0fa4c" style="width: 100.0%; height: 100.0%;">中央大學 (2023年): 28 份</div>`)[0];
+            popup_85b11310cb38ab9ab84dcd7113e79cd7.setContent(html_53f2cbba0ef4a2389ed708c893b0fa4c);
+        
+
+        circle_marker_21463c74ad3e8e2df804bc4fb7f82150.bindPopup(popup_85b11310cb38ab9ab84dcd7113e79cd7)
+        ;
+
+        
+    
+    
+            var poly_line_e3fab6a6d32591ce9bfa58b72a208a25 = L.polyline(
+                [[24.9681, 121.1919], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.12}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_e10445b29c8cabd89f8cfc57bc4536db = L.circleMarker(
+                [24.1232, 120.6743],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_a98bff29b0e074ea4aba8a85517c0eec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17d396f6fcc7411c14b3d7673366e8c8 = $(`<div id="html_17d396f6fcc7411c14b3d7673366e8c8" style="width: 100.0%; height: 100.0%;">中興大學 (2023年): 7 份</div>`)[0];
+            popup_a98bff29b0e074ea4aba8a85517c0eec.setContent(html_17d396f6fcc7411c14b3d7673366e8c8);
+        
+
+        circle_marker_e10445b29c8cabd89f8cfc57bc4536db.bindPopup(popup_a98bff29b0e074ea4aba8a85517c0eec)
+        ;
+
+        
+    
+    
+            var poly_line_c6ec2e6c2980d3803c10f688ed6f1de5 = L.polyline(
+                [[24.1232, 120.6743], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_f343d73a37a86650cfc01a697b678f82 = L.circleMarker(
+                [23.5639, 120.4762],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_1ba97304bf6e7ef5f9bcb78504981dff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a29a879c2015eb991999a39b128e8904 = $(`<div id="html_a29a879c2015eb991999a39b128e8904" style="width: 100.0%; height: 100.0%;">中正大學 (2023年): 15 份</div>`)[0];
+            popup_1ba97304bf6e7ef5f9bcb78504981dff.setContent(html_a29a879c2015eb991999a39b128e8904);
+        
+
+        circle_marker_f343d73a37a86650cfc01a697b678f82.bindPopup(popup_1ba97304bf6e7ef5f9bcb78504981dff)
+        ;
+
+        
+    
+    
+            var poly_line_c3c79ae7335b598f9cc1b0e89999e9cb = L.polyline(
+                [[23.5639, 120.4762], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_e7663863a52cba841645613129f74c02 = L.circleMarker(
+                [22.6273, 120.3014],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_96141009edcb5c0c7762d4ee3686ed30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b06c5686fe97d57ff00a0d2716bb468 = $(`<div id="html_1b06c5686fe97d57ff00a0d2716bb468" style="width: 100.0%; height: 100.0%;">中山大學 (2023年): 17 份</div>`)[0];
+            popup_96141009edcb5c0c7762d4ee3686ed30.setContent(html_1b06c5686fe97d57ff00a0d2716bb468);
+        
+
+        circle_marker_e7663863a52cba841645613129f74c02.bindPopup(popup_96141009edcb5c0c7762d4ee3686ed30)
+        ;
+
+        
+    
+    
+            var poly_line_1d2c6932bbea714e12321b2eb514807e = L.polyline(
+                [[22.6273, 120.3014], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_264f368b1159629744387012e82c2825 = L.circleMarker(
+                [25.0134, 121.5418],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_1ccc41eb53c007da9e278ed92345dda2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ce27ca3d024f047f1a892357a85eab7 = $(`<div id="html_7ce27ca3d024f047f1a892357a85eab7" style="width: 100.0%; height: 100.0%;">台灣科技大學 (2023年): 22 份</div>`)[0];
+            popup_1ccc41eb53c007da9e278ed92345dda2.setContent(html_7ce27ca3d024f047f1a892357a85eab7);
+        
+
+        circle_marker_264f368b1159629744387012e82c2825.bindPopup(popup_1ccc41eb53c007da9e278ed92345dda2)
+        ;
+
+        
+    
+    
+            var poly_line_726e37e475d5c3fd742d3997d13b210d = L.polyline(
+                [[25.0134, 121.5418], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_0977d459450dddbbbac5f463fd617fe7 = L.circleMarker(
+                [25.0441, 121.5336],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_d4f0b73572a3b311cab5040aafe1db8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_772a78796ef6b08842ca9de13a115732 = $(`<div id="html_772a78796ef6b08842ca9de13a115732" style="width: 100.0%; height: 100.0%;">台北科技大學 (2023年): 13 份</div>`)[0];
+            popup_d4f0b73572a3b311cab5040aafe1db8e.setContent(html_772a78796ef6b08842ca9de13a115732);
+        
+
+        circle_marker_0977d459450dddbbbac5f463fd617fe7.bindPopup(popup_d4f0b73572a3b311cab5040aafe1db8e)
+        ;
+
+        
+    
+    
+            var poly_line_e1379f8b7351318221e2e95f70aeb8ef = L.polyline(
+                [[25.0441, 121.5336], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_86c4b4380cb2fb7e48b10da41413f29d = L.circleMarker(
+                [25.0169, 121.4332],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_14e5d0be8f6b5c16dd09cb3944c536b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a2567d3fae2b885064a140a9ab38b52 = $(`<div id="html_3a2567d3fae2b885064a140a9ab38b52" style="width: 100.0%; height: 100.0%;">政治大學 (2023年): 65 份</div>`)[0];
+            popup_14e5d0be8f6b5c16dd09cb3944c536b0.setContent(html_3a2567d3fae2b885064a140a9ab38b52);
+        
+
+        circle_marker_86c4b4380cb2fb7e48b10da41413f29d.bindPopup(popup_14e5d0be8f6b5c16dd09cb3944c536b0)
+        ;
+
+        
+    
+    
+            var poly_line_f4b30900a22c6f0de4ba427e57a806a2 = L.polyline(
+                [[25.0169, 121.4332], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.6}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var circle_marker_7705ceb82cbcb948f7008189c435302b = L.circleMarker(
+                [25.0265, 121.5271],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+        var popup_428dad1287586f5eb258908e88ef54d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dec46622632cb892f302eccb9633147c = $(`<div id="html_dec46622632cb892f302eccb9633147c" style="width: 100.0%; height: 100.0%;">台灣師範大學 (2023年): 9 份</div>`)[0];
+            popup_428dad1287586f5eb258908e88ef54d6.setContent(html_dec46622632cb892f302eccb9633147c);
+        
+
+        circle_marker_7705ceb82cbcb948f7008189c435302b.bindPopup(popup_428dad1287586f5eb258908e88ef54d6)
+        ;
+
+        
+    
+    
+            var poly_line_2c1d8e0874576e8b0a54680b93d27a64 = L.polyline(
+                [[25.0265, 121.5271], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_ab3549686f3893fd049594363d5042f5);
+        
+    
+            var feature_group_024e0f04a2ffa9d827325a025207e2ef = L.featureGroup(
+                {}
+            ).addTo(map_4bc2009cb3c1c8f85b71df77fc1f74d6);
+        
+    
+            var circle_marker_effadd20027bd6eceebb597493fc2443 = L.circleMarker(
+                [25.0173, 121.5398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.1, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_99ccdf73c73640883b2a8e7ab4245eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e274edd6f011f241c08ac75a537e00a9 = $(`<div id="html_e274edd6f011f241c08ac75a537e00a9" style="width: 100.0%; height: 100.0%;">台灣大學 (2024年): 101 份</div>`)[0];
+            popup_99ccdf73c73640883b2a8e7ab4245eb8.setContent(html_e274edd6f011f241c08ac75a537e00a9);
+        
+
+        circle_marker_effadd20027bd6eceebb597493fc2443.bindPopup(popup_99ccdf73c73640883b2a8e7ab4245eb8)
+        ;
+
+        
+    
+    
+            var poly_line_fb6bc7f58e0e20d465779d349f6a3fb2 = L.polyline(
+                [[25.0173, 121.5398], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 4.04}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_d2bd0e925f5f23a93c59f9bf2b6b39da = L.circleMarker(
+                [24.7867, 120.9996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_c68b74309b5457cf45049fdf7dee96c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_658a8d24d3d7ce0245f1d88983e530c3 = $(`<div id="html_658a8d24d3d7ce0245f1d88983e530c3" style="width: 100.0%; height: 100.0%;">陽明交通大學 (2024年): 58 份</div>`)[0];
+            popup_c68b74309b5457cf45049fdf7dee96c1.setContent(html_658a8d24d3d7ce0245f1d88983e530c3);
+        
+
+        circle_marker_d2bd0e925f5f23a93c59f9bf2b6b39da.bindPopup(popup_c68b74309b5457cf45049fdf7dee96c1)
+        ;
+
+        
+    
+    
+            var poly_line_a0317a30251e868bceb5dd2b314c9a27 = L.polyline(
+                [[24.7867, 120.9996], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.32}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_10d9afcaaf3be0e7bfdf48be3f78542b = L.circleMarker(
+                [22.9986, 120.2199],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_e174bb36163c3d5a0c783875044e9da4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_402692f88a40c824795f5d15c2e3ce7b = $(`<div id="html_402692f88a40c824795f5d15c2e3ce7b" style="width: 100.0%; height: 100.0%;">成功大學 (2024年): 55 份</div>`)[0];
+            popup_e174bb36163c3d5a0c783875044e9da4.setContent(html_402692f88a40c824795f5d15c2e3ce7b);
+        
+
+        circle_marker_10d9afcaaf3be0e7bfdf48be3f78542b.bindPopup(popup_e174bb36163c3d5a0c783875044e9da4)
+        ;
+
+        
+    
+    
+            var poly_line_0991ca0e2d63127938acd108a50d6ae3 = L.polyline(
+                [[22.9986, 120.2199], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.2}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_4641da762699ce936682d7bddaba209c = L.circleMarker(
+                [24.9681, 121.1919],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_df33d560d2ae909593d84a90df0affd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ee12539f3f3cd40d69763c8242b1f11 = $(`<div id="html_0ee12539f3f3cd40d69763c8242b1f11" style="width: 100.0%; height: 100.0%;">中央大學 (2024年): 32 份</div>`)[0];
+            popup_df33d560d2ae909593d84a90df0affd6.setContent(html_0ee12539f3f3cd40d69763c8242b1f11);
+        
+
+        circle_marker_4641da762699ce936682d7bddaba209c.bindPopup(popup_df33d560d2ae909593d84a90df0affd6)
+        ;
+
+        
+    
+    
+            var poly_line_69fdab825b27d25e87fcbbc275f7a2d3 = L.polyline(
+                [[24.9681, 121.1919], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.28}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_995007218f6d93775bdf341b68dbb2f1 = L.circleMarker(
+                [24.1232, 120.6743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_98bcd06beef91b818eab9ce4a2121812 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4c0bf50f652874c85c520837aa4eacd = $(`<div id="html_f4c0bf50f652874c85c520837aa4eacd" style="width: 100.0%; height: 100.0%;">中興大學 (2024年): 8 份</div>`)[0];
+            popup_98bcd06beef91b818eab9ce4a2121812.setContent(html_f4c0bf50f652874c85c520837aa4eacd);
+        
+
+        circle_marker_995007218f6d93775bdf341b68dbb2f1.bindPopup(popup_98bcd06beef91b818eab9ce4a2121812)
+        ;
+
+        
+    
+    
+            var poly_line_d96c145ff1f38381c9000b62c2a260d1 = L.polyline(
+                [[24.1232, 120.6743], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_cabe8a41fe0f5392f1a81909a6d2987a = L.circleMarker(
+                [23.5639, 120.4762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_036583f08b942ca819543900ca561c9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3ae1f3938fc559541968330fbb75c02 = $(`<div id="html_b3ae1f3938fc559541968330fbb75c02" style="width: 100.0%; height: 100.0%;">中正大學 (2024年): 17 份</div>`)[0];
+            popup_036583f08b942ca819543900ca561c9d.setContent(html_b3ae1f3938fc559541968330fbb75c02);
+        
+
+        circle_marker_cabe8a41fe0f5392f1a81909a6d2987a.bindPopup(popup_036583f08b942ca819543900ca561c9d)
+        ;
+
+        
+    
+    
+            var poly_line_e9770eecfebb010d5be9e4a0e204876b = L.polyline(
+                [[23.5639, 120.4762], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_276bccd74a1ced0b43e5f14e44d3ab53 = L.circleMarker(
+                [22.6273, 120.3014],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_d07b36b938550c900efb371e32130d4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_362fcbdbead29d90541ef7525d13a820 = $(`<div id="html_362fcbdbead29d90541ef7525d13a820" style="width: 100.0%; height: 100.0%;">中山大學 (2024年): 34 份</div>`)[0];
+            popup_d07b36b938550c900efb371e32130d4b.setContent(html_362fcbdbead29d90541ef7525d13a820);
+        
+
+        circle_marker_276bccd74a1ced0b43e5f14e44d3ab53.bindPopup(popup_d07b36b938550c900efb371e32130d4b)
+        ;
+
+        
+    
+    
+            var poly_line_bff7256ca5a5d5bfc81751a2370a7203 = L.polyline(
+                [[22.6273, 120.3014], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.36}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_5610f2c335076182a3776d4a4ee4604f = L.circleMarker(
+                [25.0134, 121.5418],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_80d2739ae4e8bd3a5a79ea3e8a36b297 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef6fa48d6bf0899bfc06036e1759689 = $(`<div id="html_eef6fa48d6bf0899bfc06036e1759689" style="width: 100.0%; height: 100.0%;">台灣科技大學 (2024年): 38 份</div>`)[0];
+            popup_80d2739ae4e8bd3a5a79ea3e8a36b297.setContent(html_eef6fa48d6bf0899bfc06036e1759689);
+        
+
+        circle_marker_5610f2c335076182a3776d4a4ee4604f.bindPopup(popup_80d2739ae4e8bd3a5a79ea3e8a36b297)
+        ;
+
+        
+    
+    
+            var poly_line_a54c12dd5e1a44fda3a632282d4ab132 = L.polyline(
+                [[25.0134, 121.5418], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.52}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_6b772a7192beaa419dbf7d4e038392e5 = L.circleMarker(
+                [25.0441, 121.5336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_aae9997858f6b975ce58ba2b5a0b29a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c300f80a0b6d9c714e9c034ac661854 = $(`<div id="html_7c300f80a0b6d9c714e9c034ac661854" style="width: 100.0%; height: 100.0%;">台北科技大學 (2024年): 28 份</div>`)[0];
+            popup_aae9997858f6b975ce58ba2b5a0b29a0.setContent(html_7c300f80a0b6d9c714e9c034ac661854);
+        
+
+        circle_marker_6b772a7192beaa419dbf7d4e038392e5.bindPopup(popup_aae9997858f6b975ce58ba2b5a0b29a0)
+        ;
+
+        
+    
+    
+            var poly_line_811ca065f410533e62d19e673fb6f26a = L.polyline(
+                [[25.0441, 121.5336], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.12}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_670602913e388504075c20d4f123d93d = L.circleMarker(
+                [25.0169, 121.4332],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_825e8893eaa26a54b7bf35bb1526b298 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0cb3c622249b1dd1cd0982884d6eb07 = $(`<div id="html_b0cb3c622249b1dd1cd0982884d6eb07" style="width: 100.0%; height: 100.0%;">政治大學 (2024年): 89 份</div>`)[0];
+            popup_825e8893eaa26a54b7bf35bb1526b298.setContent(html_b0cb3c622249b1dd1cd0982884d6eb07);
+        
+
+        circle_marker_670602913e388504075c20d4f123d93d.bindPopup(popup_825e8893eaa26a54b7bf35bb1526b298)
+        ;
+
+        
+    
+    
+            var poly_line_34f98bddbcd8f2a793eff8be4aa26041 = L.polyline(
+                [[25.0169, 121.4332], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3.56}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var circle_marker_c1c5a8cc824f333a2f73d9297c30a771 = L.circleMarker(
+                [25.0265, 121.5271],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+        var popup_cd077b1124cbebce2d6cb624b3a27158 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e69be7fbd00bcedeb94cab7cbfdf1c7d = $(`<div id="html_e69be7fbd00bcedeb94cab7cbfdf1c7d" style="width: 100.0%; height: 100.0%;">台灣師範大學 (2024年): 33 份</div>`)[0];
+            popup_cd077b1124cbebce2d6cb624b3a27158.setContent(html_e69be7fbd00bcedeb94cab7cbfdf1c7d);
+        
+
+        circle_marker_c1c5a8cc824f333a2f73d9297c30a771.bindPopup(popup_cd077b1124cbebce2d6cb624b3a27158)
+        ;
+
+        
+    
+    
+            var poly_line_1b4e9699ff89885d0c9c79cfe46165de = L.polyline(
+                [[25.0265, 121.5271], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.32}
+            ).addTo(feature_group_024e0f04a2ffa9d827325a025207e2ef);
+        
+    
+            var feature_group_af0e0b02d4d6bf8b8e62d26da15cb059 = L.featureGroup(
+                {}
+            ).addTo(map_4bc2009cb3c1c8f85b71df77fc1f74d6);
+        
+    
+            var circle_marker_90d15c0cd000fd775473bb8f252f42af = L.circleMarker(
+                [25.0173, 121.5398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_1d231c70bfca76d1742d726e55e9b948 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_953a6c7c67621e705dc0ab3025ff7486 = $(`<div id="html_953a6c7c67621e705dc0ab3025ff7486" style="width: 100.0%; height: 100.0%;">台灣大學 (2025年): 163 份</div>`)[0];
+            popup_1d231c70bfca76d1742d726e55e9b948.setContent(html_953a6c7c67621e705dc0ab3025ff7486);
+        
+
+        circle_marker_90d15c0cd000fd775473bb8f252f42af.bindPopup(popup_1d231c70bfca76d1742d726e55e9b948)
+        ;
+
+        
+    
+    
+            var poly_line_093e10e64de0d857b565c3254e872daa = L.polyline(
+                [[25.0173, 121.5398], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 6.52}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_3a7400cefa9ee55e4966a98523c43789 = L.circleMarker(
+                [24.7867, 120.9996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_c5ad24256cee4b9d70f58135ea2b7d4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_172ceca7cc85ebc10f1162eb6413b714 = $(`<div id="html_172ceca7cc85ebc10f1162eb6413b714" style="width: 100.0%; height: 100.0%;">陽明交通大學 (2025年): 88 份</div>`)[0];
+            popup_c5ad24256cee4b9d70f58135ea2b7d4b.setContent(html_172ceca7cc85ebc10f1162eb6413b714);
+        
+
+        circle_marker_3a7400cefa9ee55e4966a98523c43789.bindPopup(popup_c5ad24256cee4b9d70f58135ea2b7d4b)
+        ;
+
+        
+    
+    
+            var poly_line_487a8ae710ef1cb6828dd21400582503 = L.polyline(
+                [[24.7867, 120.9996], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3.52}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_4909b109eee940fd76523dab5d61e29d = L.circleMarker(
+                [22.9986, 120.2199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_f44406bc17c62c5e65cfaa9ccc192803 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9c3af760c9b2f240a83e4a76ee38f5a = $(`<div id="html_c9c3af760c9b2f240a83e4a76ee38f5a" style="width: 100.0%; height: 100.0%;">成功大學 (2025年): 83 份</div>`)[0];
+            popup_f44406bc17c62c5e65cfaa9ccc192803.setContent(html_c9c3af760c9b2f240a83e4a76ee38f5a);
+        
+
+        circle_marker_4909b109eee940fd76523dab5d61e29d.bindPopup(popup_f44406bc17c62c5e65cfaa9ccc192803)
+        ;
+
+        
+    
+    
+            var poly_line_0bfe685c7d610ba076d1c75b283feb05 = L.polyline(
+                [[22.9986, 120.2199], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3.32}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_887fb480eea1e03027594c4bc7461f3a = L.circleMarker(
+                [24.9681, 121.1919],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_b8408d86f63bf4371e68a2528a5efdc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0666f1a4f1346ba16623c1754f85884c = $(`<div id="html_0666f1a4f1346ba16623c1754f85884c" style="width: 100.0%; height: 100.0%;">中央大學 (2025年): 52 份</div>`)[0];
+            popup_b8408d86f63bf4371e68a2528a5efdc3.setContent(html_0666f1a4f1346ba16623c1754f85884c);
+        
+
+        circle_marker_887fb480eea1e03027594c4bc7461f3a.bindPopup(popup_b8408d86f63bf4371e68a2528a5efdc3)
+        ;
+
+        
+    
+    
+            var poly_line_90d47f02b72e27f8a7079dbed3958250 = L.polyline(
+                [[24.9681, 121.1919], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.08}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_37c9d1836baace061f196b9f74798cdf = L.circleMarker(
+                [24.1232, 120.6743],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_d7d7b224f2a8fc85553adfa476c72306 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fbc0a14c438e1a82b3f55adad72c0f9 = $(`<div id="html_6fbc0a14c438e1a82b3f55adad72c0f9" style="width: 100.0%; height: 100.0%;">中興大學 (2025年): 27 份</div>`)[0];
+            popup_d7d7b224f2a8fc85553adfa476c72306.setContent(html_6fbc0a14c438e1a82b3f55adad72c0f9);
+        
+
+        circle_marker_37c9d1836baace061f196b9f74798cdf.bindPopup(popup_d7d7b224f2a8fc85553adfa476c72306)
+        ;
+
+        
+    
+    
+            var poly_line_9a7fdf2e56136fb6a3b148f1d571d2cc = L.polyline(
+                [[24.1232, 120.6743], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.08}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_ee6896d36d700414f7d80b9a7b288270 = L.circleMarker(
+                [23.5639, 120.4762],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_d337e40d81e65a1352d576ba0bce0bfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9efff4d9a846b75b55259dbcd9a103ca = $(`<div id="html_9efff4d9a846b75b55259dbcd9a103ca" style="width: 100.0%; height: 100.0%;">中正大學 (2025年): 48 份</div>`)[0];
+            popup_d337e40d81e65a1352d576ba0bce0bfa.setContent(html_9efff4d9a846b75b55259dbcd9a103ca);
+        
+
+        circle_marker_ee6896d36d700414f7d80b9a7b288270.bindPopup(popup_d337e40d81e65a1352d576ba0bce0bfa)
+        ;
+
+        
+    
+    
+            var poly_line_c6ae8de0ebb60f90c306a0a4ae3047e5 = L.polyline(
+                [[23.5639, 120.4762], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.92}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_b0a597506f65cdf2b007194d98637ea3 = L.circleMarker(
+                [22.6273, 120.3014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_37630f46b92212e25da15e7b0fdc54cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c400c77d431dca49b010966ea69e49a = $(`<div id="html_1c400c77d431dca49b010966ea69e49a" style="width: 100.0%; height: 100.0%;">中山大學 (2025年): 59 份</div>`)[0];
+            popup_37630f46b92212e25da15e7b0fdc54cf.setContent(html_1c400c77d431dca49b010966ea69e49a);
+        
+
+        circle_marker_b0a597506f65cdf2b007194d98637ea3.bindPopup(popup_37630f46b92212e25da15e7b0fdc54cf)
+        ;
+
+        
+    
+    
+            var poly_line_96b1116411c03596fea128223ad36c16 = L.polyline(
+                [[22.6273, 120.3014], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.36}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_b77dd4fcfd852f51f3aba82d05c6ddfa = L.circleMarker(
+                [25.0134, 121.5418],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_e60cbb6037d2b017096949b5c64227e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_804789beb753547042bd3f67c0ec72a0 = $(`<div id="html_804789beb753547042bd3f67c0ec72a0" style="width: 100.0%; height: 100.0%;">台灣科技大學 (2025年): 67 份</div>`)[0];
+            popup_e60cbb6037d2b017096949b5c64227e7.setContent(html_804789beb753547042bd3f67c0ec72a0);
+        
+
+        circle_marker_b77dd4fcfd852f51f3aba82d05c6ddfa.bindPopup(popup_e60cbb6037d2b017096949b5c64227e7)
+        ;
+
+        
+    
+    
+            var poly_line_406ad4c2be81ca91b1f6824a0d7396bc = L.polyline(
+                [[25.0134, 121.5418], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.68}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_103385c4410167671f403f762c97836d = L.circleMarker(
+                [25.0441, 121.5336],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_46bd8077a173324b34728d569a854bb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_080c323b833f71cc67f4fb305c7b36a8 = $(`<div id="html_080c323b833f71cc67f4fb305c7b36a8" style="width: 100.0%; height: 100.0%;">台北科技大學 (2025年): 49 份</div>`)[0];
+            popup_46bd8077a173324b34728d569a854bb7.setContent(html_080c323b833f71cc67f4fb305c7b36a8);
+        
+
+        circle_marker_103385c4410167671f403f762c97836d.bindPopup(popup_46bd8077a173324b34728d569a854bb7)
+        ;
+
+        
+    
+    
+            var poly_line_473f49dac3c53b4b86533c60a4309199 = L.polyline(
+                [[25.0441, 121.5336], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.96}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_89004c0dde9c3081fb352a1ad88c1414 = L.circleMarker(
+                [25.0169, 121.4332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_d17be6a2f24d8976baedf18f2816afd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95be4e811fb370679841e8fd194683a9 = $(`<div id="html_95be4e811fb370679841e8fd194683a9" style="width: 100.0%; height: 100.0%;">政治大學 (2025年): 126 份</div>`)[0];
+            popup_d17be6a2f24d8976baedf18f2816afd7.setContent(html_95be4e811fb370679841e8fd194683a9);
+        
+
+        circle_marker_89004c0dde9c3081fb352a1ad88c1414.bindPopup(popup_d17be6a2f24d8976baedf18f2816afd7)
+        ;
+
+        
+    
+    
+            var poly_line_c5d1551c314e474c783762443be536fa = L.polyline(
+                [[25.0169, 121.4332], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 5.04}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var circle_marker_4ffcca5bf396ae51001957a4fdf4ae69 = L.circleMarker(
+                [25.0265, 121.5271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+        var popup_b6d32a84b69f65a1b3c46183cd323009 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0f92d7428f108b57b68dc11e0b94cb9 = $(`<div id="html_b0f92d7428f108b57b68dc11e0b94cb9" style="width: 100.0%; height: 100.0%;">台灣師範大學 (2025年): 62 份</div>`)[0];
+            popup_b6d32a84b69f65a1b3c46183cd323009.setContent(html_b0f92d7428f108b57b68dc11e0b94cb9);
+        
+
+        circle_marker_4ffcca5bf396ae51001957a4fdf4ae69.bindPopup(popup_b6d32a84b69f65a1b3c46183cd323009)
+        ;
+
+        
+    
+    
+            var poly_line_b1c2a7bb7761bef71543c47cd58613d2 = L.polyline(
+                [[25.0265, 121.5271], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.48}
+            ).addTo(feature_group_af0e0b02d4d6bf8b8e62d26da15cb059);
+        
+    
+            var layer_control_723b24701757be614cb211451120d695 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4cafeb1c946d844b8db41f7f2f089756,
+                },
+                overlays :  {
+                    "2023\u5e74" : feature_group_ab3549686f3893fd049594363d5042f5,
+                    "2024\u5e74" : feature_group_024e0f04a2ffa9d827325a025207e2ef,
+                    "2025\u5e74" : feature_group_af0e0b02d4d6bf8b8e62d26da15cb059,
+                },
+            };
+            L.control.layers(
+                layer_control_723b24701757be614cb211451120d695.base_layers,
+                layer_control_723b24701757be614cb211451120d695.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_4bc2009cb3c1c8f85b71df77fc1f74d6);
+        
+</script>
+</html>
