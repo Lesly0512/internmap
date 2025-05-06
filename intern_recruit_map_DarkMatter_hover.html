@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_951918ee9898a8f16aa6e4b4ead9ebb4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_951918ee9898a8f16aa6e4b4ead9ebb4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_951918ee9898a8f16aa6e4b4ead9ebb4 = L.map(
+                "map_951918ee9898a8f16aa6e4b4ead9ebb4",
+                {
+                    center: [23.8, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_290a651fa7da2198626b168e9dc85739 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_951918ee9898a8f16aa6e4b4ead9ebb4);
+        
+    
+            var marker_00121ef9df157eee74fa69abf326b5ee = L.marker(
+                [24.9735, 121.4507],
+                {}
+            ).addTo(map_951918ee9898a8f16aa6e4b4ead9ebb4);
+        
+    
+            var icon_714961078f926610e9020cbccd45b392 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_00121ef9df157eee74fa69abf326b5ee.setIcon(icon_714961078f926610e9020cbccd45b392);
+        
+    
+        var popup_25c140ab83cc171214063ec211d99f6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a58ffcfadf15b1a1567ad93aa156d86c = $(`<div id="html_a58ffcfadf15b1a1567ad93aa156d86c" style="width: 100.0%; height: 100.0%;">公司總部：新北市土城區自由街2號</div>`)[0];
+            popup_25c140ab83cc171214063ec211d99f6d.setContent(html_a58ffcfadf15b1a1567ad93aa156d86c);
+        
+
+        marker_00121ef9df157eee74fa69abf326b5ee.bindPopup(popup_25c140ab83cc171214063ec211d99f6d)
+        ;
+
+        
+    
+    
+            var feature_group_1f39c687b4ff251e79620e3ef6a66d36 = L.featureGroup(
+                {}
+            ).addTo(map_951918ee9898a8f16aa6e4b4ead9ebb4);
+        
+    
+            var circle_marker_5818279ba441ff2c340994e60949246e = L.circleMarker(
+                [25.0173, 121.5398],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_5818279ba441ff2c340994e60949246e.bindTooltip(
+                `<div>
+                     <b>台灣大學</b><br>2023年：██████ 69<br>2024年：██████████ 101 (+32)<br>2025年：████████████████ 163 (+62)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fe405d034617e18585bd33d27077113b = L.polyline(
+                [[25.0173, 121.5398], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.76}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_56a78ff479b2efc744210a5e723d3a91 = L.circleMarker(
+                [24.7867, 120.9996],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_56a78ff479b2efc744210a5e723d3a91.bindTooltip(
+                `<div>
+                     <b>陽明交通大學</b><br>2023年：███ 35<br>2024年：█████ 58 (+23)<br>2025年：████████ 88 (+30)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9f2dfc84256857352664e2e6b5891fe8 = L.polyline(
+                [[24.7867, 120.9996], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_74057443f5540df925dc222744d709a0 = L.circleMarker(
+                [22.9986, 120.2199],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_74057443f5540df925dc222744d709a0.bindTooltip(
+                `<div>
+                     <b>成功大學</b><br>2023年：███ 39<br>2024年：█████ 55 (+16)<br>2025年：████████ 83 (+28)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d92d7e65637e728cf0deeb6959a3fb6 = L.polyline(
+                [[22.9986, 120.2199], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.56}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_ce45f6ca6a15fca7bc0caae93a9b3444 = L.circleMarker(
+                [24.9681, 121.1919],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_ce45f6ca6a15fca7bc0caae93a9b3444.bindTooltip(
+                `<div>
+                     <b>中央大學</b><br>2023年：██ 28<br>2024年：███ 32 (+4)<br>2025年：█████ 52 (+20)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ed54ccbd851008a26e81bb7a8eda482f = L.polyline(
+                [[24.9681, 121.1919], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_9f71b2526d28d19cc6e59359d2908a5b = L.circleMarker(
+                [24.1232, 120.6743],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_9f71b2526d28d19cc6e59359d2908a5b.bindTooltip(
+                `<div>
+                     <b>中興大學</b><br>2023年： 7<br>2024年： 8 (+1)<br>2025年：██ 27 (+19)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f2f22b40fa1fd2eb6bd7ebbdf986a0ff = L.polyline(
+                [[24.1232, 120.6743], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_d32fa20f383a076ecbc70a31e5dbdcf0 = L.circleMarker(
+                [23.5639, 120.4762],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_d32fa20f383a076ecbc70a31e5dbdcf0.bindTooltip(
+                `<div>
+                     <b>中正大學</b><br>2023年：█ 15<br>2024年：█ 17 (+2)<br>2025年：████ 48 (+31)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4e5fad3258064d593bf7fda3f91d0f99 = L.polyline(
+                [[23.5639, 120.4762], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_d0b1b3ac1770c211b2c7eb68cb62577b = L.circleMarker(
+                [22.6273, 120.3014],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_d0b1b3ac1770c211b2c7eb68cb62577b.bindTooltip(
+                `<div>
+                     <b>中山大學</b><br>2023年：█ 17<br>2024年：███ 34 (+17)<br>2025年：█████ 59 (+25)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_14a8ee4c8d53e6c797ea24bba4b3b57f = L.polyline(
+                [[22.6273, 120.3014], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_39d0fa37152871a83ecc88b58b9fb356 = L.circleMarker(
+                [25.0134, 121.5418],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_39d0fa37152871a83ecc88b58b9fb356.bindTooltip(
+                `<div>
+                     <b>台灣科技大學</b><br>2023年：██ 22<br>2024年：███ 38 (+16)<br>2025年：██████ 67 (+29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ab039f244ea8ddd156d925d617f9c7d0 = L.polyline(
+                [[25.0134, 121.5418], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_c8617228fd7274fe0b15c2b67ebcf295 = L.circleMarker(
+                [25.0441, 121.5336],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_c8617228fd7274fe0b15c2b67ebcf295.bindTooltip(
+                `<div>
+                     <b>台北科技大學</b><br>2023年：█ 13<br>2024年：██ 28 (+15)<br>2025年：████ 49 (+21)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bb522062cb7d129853eae71a7c68bc54 = L.polyline(
+                [[25.0441, 121.5336], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_3924952f1b0cd50773df65f79e43d8c1 = L.circleMarker(
+                [25.0169, 121.4332],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_3924952f1b0cd50773df65f79e43d8c1.bindTooltip(
+                `<div>
+                     <b>政治大學</b><br>2023年：██████ 65<br>2024年：████████ 89 (+24)<br>2025年：████████████ 126 (+37)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7d0d7e3a9558cb81434267dd7c0df523 = L.polyline(
+                [[25.0169, 121.4332], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.6}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var circle_marker_2f1402f9a854ff167cebfdac78f79f6f = L.circleMarker(
+                [25.0265, 121.5271],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            circle_marker_2f1402f9a854ff167cebfdac78f79f6f.bindTooltip(
+                `<div>
+                     <b>台灣師範大學</b><br>2023年： 9<br>2024年：███ 33 (+24)<br>2025年：██████ 62 (+29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8808ee1dfeca1978dd418c293d097655 = L.polyline(
+                [[25.0265, 121.5271], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1f39c687b4ff251e79620e3ef6a66d36);
+        
+    
+            var feature_group_1e299c7e2817a164f9cad2f3df7c1195 = L.featureGroup(
+                {}
+            ).addTo(map_951918ee9898a8f16aa6e4b4ead9ebb4);
+        
+    
+            var circle_marker_55ce48fbc7ced3f0086d37e7ad2ee801 = L.circleMarker(
+                [25.0173, 121.5398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.1, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_55ce48fbc7ced3f0086d37e7ad2ee801.bindTooltip(
+                `<div>
+                     <b>台灣大學</b><br>2023年：██████ 69<br>2024年：██████████ 101 (+32)<br>2025年：████████████████ 163 (+62)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f70929c7c16e157f3e35cdac14593f7b = L.polyline(
+                [[25.0173, 121.5398], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 4.04}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_d4e04e4de8adc8484481d88289c189b4 = L.circleMarker(
+                [24.7867, 120.9996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_d4e04e4de8adc8484481d88289c189b4.bindTooltip(
+                `<div>
+                     <b>陽明交通大學</b><br>2023年：███ 35<br>2024年：█████ 58 (+23)<br>2025年：████████ 88 (+30)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9141c033af95dddeea85aa9e906c54f7 = L.polyline(
+                [[24.7867, 120.9996], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.32}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_7dcb6dcf0597719d84b355b234318d09 = L.circleMarker(
+                [22.9986, 120.2199],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_7dcb6dcf0597719d84b355b234318d09.bindTooltip(
+                `<div>
+                     <b>成功大學</b><br>2023年：███ 39<br>2024年：█████ 55 (+16)<br>2025年：████████ 83 (+28)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7e310e93ccd87df8987695e86a097706 = L.polyline(
+                [[22.9986, 120.2199], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.2}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_ac87a8e0567d0c2ea8a34a3538d95796 = L.circleMarker(
+                [24.9681, 121.1919],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_ac87a8e0567d0c2ea8a34a3538d95796.bindTooltip(
+                `<div>
+                     <b>中央大學</b><br>2023年：██ 28<br>2024年：███ 32 (+4)<br>2025年：█████ 52 (+20)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_49a6fbab14689d8c006235daed2e0f0d = L.polyline(
+                [[24.9681, 121.1919], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_a812fd5a24ee71dc51908c41e3933da1 = L.circleMarker(
+                [24.1232, 120.6743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_a812fd5a24ee71dc51908c41e3933da1.bindTooltip(
+                `<div>
+                     <b>中興大學</b><br>2023年： 7<br>2024年： 8 (+1)<br>2025年：██ 27 (+19)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dd160dba4714e2eeb7f310a7d4636573 = L.polyline(
+                [[24.1232, 120.6743], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_00c93b59e9c75298a01ae7d84d5b0b65 = L.circleMarker(
+                [23.5639, 120.4762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_00c93b59e9c75298a01ae7d84d5b0b65.bindTooltip(
+                `<div>
+                     <b>中正大學</b><br>2023年：█ 15<br>2024年：█ 17 (+2)<br>2025年：████ 48 (+31)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b873fa97ace6e2f4d6fa266929978298 = L.polyline(
+                [[23.5639, 120.4762], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_fd4a40e2215dcce53935242a9551e7ac = L.circleMarker(
+                [22.6273, 120.3014],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_fd4a40e2215dcce53935242a9551e7ac.bindTooltip(
+                `<div>
+                     <b>中山大學</b><br>2023年：█ 17<br>2024年：███ 34 (+17)<br>2025年：█████ 59 (+25)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b1a7de09983ea04719a9bbc13d35a33b = L.polyline(
+                [[22.6273, 120.3014], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_afe44734fdd9fb16693aeaa65a3811ca = L.circleMarker(
+                [25.0134, 121.5418],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_afe44734fdd9fb16693aeaa65a3811ca.bindTooltip(
+                `<div>
+                     <b>台灣科技大學</b><br>2023年：██ 22<br>2024年：███ 38 (+16)<br>2025年：██████ 67 (+29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7cecfbb99d35b81babd13d69a7f5a604 = L.polyline(
+                [[25.0134, 121.5418], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.52}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_68a6e720db9be57a43f8ef96b911c59e = L.circleMarker(
+                [25.0441, 121.5336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_68a6e720db9be57a43f8ef96b911c59e.bindTooltip(
+                `<div>
+                     <b>台北科技大學</b><br>2023年：█ 13<br>2024年：██ 28 (+15)<br>2025年：████ 49 (+21)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_33afed070c24174656c1b315f74181c8 = L.polyline(
+                [[25.0441, 121.5336], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_59d045e0009fddbcdd95fb6cb7829579 = L.circleMarker(
+                [25.0169, 121.4332],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_59d045e0009fddbcdd95fb6cb7829579.bindTooltip(
+                `<div>
+                     <b>政治大學</b><br>2023年：██████ 65<br>2024年：████████ 89 (+24)<br>2025年：████████████ 126 (+37)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_143327f9429880c767bd768c4e60460a = L.polyline(
+                [[25.0169, 121.4332], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3.56}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var circle_marker_99ab12efa5e0eee91fa08cabdb19f40a = L.circleMarker(
+                [25.0265, 121.5271],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            circle_marker_99ab12efa5e0eee91fa08cabdb19f40a.bindTooltip(
+                `<div>
+                     <b>台灣師範大學</b><br>2023年： 9<br>2024年：███ 33 (+24)<br>2025年：██████ 62 (+29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b11d6b75084306a5cf4838c6fe83fc96 = L.polyline(
+                [[25.0265, 121.5271], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1e299c7e2817a164f9cad2f3df7c1195);
+        
+    
+            var feature_group_2c29bf399d0a5af6a050a26f126d2abc = L.featureGroup(
+                {}
+            ).addTo(map_951918ee9898a8f16aa6e4b4ead9ebb4);
+        
+    
+            var circle_marker_1cd6750f3c0d61e69303ecbd7084a042 = L.circleMarker(
+                [25.0173, 121.5398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_1cd6750f3c0d61e69303ecbd7084a042.bindTooltip(
+                `<div>
+                     <b>台灣大學</b><br>2023年：██████ 69<br>2024年：██████████ 101 (+32)<br>2025年：████████████████ 163 (+62)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9750cc091b6eecf7f29a7e60294e6cf4 = L.polyline(
+                [[25.0173, 121.5398], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 6.52}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_e9578cc76b4d3adfd8d3725742a2a1d6 = L.circleMarker(
+                [24.7867, 120.9996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_e9578cc76b4d3adfd8d3725742a2a1d6.bindTooltip(
+                `<div>
+                     <b>陽明交通大學</b><br>2023年：███ 35<br>2024年：█████ 58 (+23)<br>2025年：████████ 88 (+30)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd9978174acc305d53e34802b18b3b5d = L.polyline(
+                [[24.7867, 120.9996], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3.52}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_7b48e266e4c8e7784966e17927d242e3 = L.circleMarker(
+                [22.9986, 120.2199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_7b48e266e4c8e7784966e17927d242e3.bindTooltip(
+                `<div>
+                     <b>成功大學</b><br>2023年：███ 39<br>2024年：█████ 55 (+16)<br>2025年：████████ 83 (+28)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_590dd0f4a584b6715b8524022fbf914b = L.polyline(
+                [[22.9986, 120.2199], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3.32}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_f1086178848fbb2b8d4fb282e6cde935 = L.circleMarker(
+                [24.9681, 121.1919],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_f1086178848fbb2b8d4fb282e6cde935.bindTooltip(
+                `<div>
+                     <b>中央大學</b><br>2023年：██ 28<br>2024年：███ 32 (+4)<br>2025年：█████ 52 (+20)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_90a09f81d55d01e0013bd7646556893c = L.polyline(
+                [[24.9681, 121.1919], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.08}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_cf16fbe0831f5a6ebb2212f24d6738fd = L.circleMarker(
+                [24.1232, 120.6743],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_cf16fbe0831f5a6ebb2212f24d6738fd.bindTooltip(
+                `<div>
+                     <b>中興大學</b><br>2023年： 7<br>2024年： 8 (+1)<br>2025年：██ 27 (+19)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fcd56e9b378173d98d5aec226bcdfd17 = L.polyline(
+                [[24.1232, 120.6743], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_1727932ac9dfa39be613f507bb38c6e5 = L.circleMarker(
+                [23.5639, 120.4762],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_1727932ac9dfa39be613f507bb38c6e5.bindTooltip(
+                `<div>
+                     <b>中正大學</b><br>2023年：█ 15<br>2024年：█ 17 (+2)<br>2025年：████ 48 (+31)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c01556c9498328fdc44dc9d76dd66605 = L.polyline(
+                [[23.5639, 120.4762], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.92}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_15c49a5a8f532ab6b55248bad4326943 = L.circleMarker(
+                [22.6273, 120.3014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_15c49a5a8f532ab6b55248bad4326943.bindTooltip(
+                `<div>
+                     <b>中山大學</b><br>2023年：█ 17<br>2024年：███ 34 (+17)<br>2025年：█████ 59 (+25)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_81a3ddfb358661b45f4d0e58fc4ced92 = L.polyline(
+                [[22.6273, 120.3014], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.36}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_c6d47f52df6480c3f7fe5e52d714c8bc = L.circleMarker(
+                [25.0134, 121.5418],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_c6d47f52df6480c3f7fe5e52d714c8bc.bindTooltip(
+                `<div>
+                     <b>台灣科技大學</b><br>2023年：██ 22<br>2024年：███ 38 (+16)<br>2025年：██████ 67 (+29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_376d56d8e2db408b6bc8b73cf2272c5e = L.polyline(
+                [[25.0134, 121.5418], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.68}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_71198d4ce7b8cae4ef36bc47469e3e97 = L.circleMarker(
+                [25.0441, 121.5336],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_71198d4ce7b8cae4ef36bc47469e3e97.bindTooltip(
+                `<div>
+                     <b>台北科技大學</b><br>2023年：█ 13<br>2024年：██ 28 (+15)<br>2025年：████ 49 (+21)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e66a3699d64b0f742b33c4daad765561 = L.polyline(
+                [[25.0441, 121.5336], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 1.96}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_ba9bbcf5f962f88fd543a3807da95a35 = L.circleMarker(
+                [25.0169, 121.4332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_ba9bbcf5f962f88fd543a3807da95a35.bindTooltip(
+                `<div>
+                     <b>政治大學</b><br>2023年：██████ 65<br>2024年：████████ 89 (+24)<br>2025年：████████████ 126 (+37)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_eb53606615485299ffd6aa8c15e51fe2 = L.polyline(
+                [[25.0169, 121.4332], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 5.04}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var circle_marker_9ce702d946204d3f91386b7211a020b8 = L.circleMarker(
+                [25.0265, 121.5271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            circle_marker_9ce702d946204d3f91386b7211a020b8.bindTooltip(
+                `<div>
+                     <b>台灣師範大學</b><br>2023年： 9<br>2024年：███ 33 (+24)<br>2025年：██████ 62 (+29)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c9d6a08d6cbdda65d5d0f0388d64829d = L.polyline(
+                [[25.0265, 121.5271], [24.9735, 121.4507]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 2.48}
+            ).addTo(feature_group_2c29bf399d0a5af6a050a26f126d2abc);
+        
+    
+            var layer_control_63eaca5e74d0034c75ac70a5d5d7678e = {
+                base_layers : {
+                    "cartodbdark_matter" : tile_layer_290a651fa7da2198626b168e9dc85739,
+                },
+                overlays :  {
+                    "2023\u5e74" : feature_group_1f39c687b4ff251e79620e3ef6a66d36,
+                    "2024\u5e74" : feature_group_1e299c7e2817a164f9cad2f3df7c1195,
+                    "2025\u5e74" : feature_group_2c29bf399d0a5af6a050a26f126d2abc,
+                },
+            };
+            L.control.layers(
+                layer_control_63eaca5e74d0034c75ac70a5d5d7678e.base_layers,
+                layer_control_63eaca5e74d0034c75ac70a5d5d7678e.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_951918ee9898a8f16aa6e4b4ead9ebb4);
+        
+</script>
+</html>
